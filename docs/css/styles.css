@@ -1,6 +1,7 @@
 /* ----------------------------*/
 /* Screen size indicator Start */
 /* ----------------------------*/
+@import url(../bower_components/normalize-css/normalize.css);
 body::before {
   color: red;
   position: fixed;
