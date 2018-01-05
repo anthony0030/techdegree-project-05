@@ -23,3 +23,20 @@
     padding-right: 10px
     &:last-of-type
       float: right
+
+
+.grid__row
+  @extend %clearfix
+  margin-bottom: em(50px)
+
+
+
+// =============================================================================
+// Grid Coloring
+// =============================================================================
+
+
+// Generate grid color display classes
+@each $value, $color in $grid-colors
+  .#{$value}.theme__colors
+    background-color: $color
