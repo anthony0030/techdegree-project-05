@@ -329,58 +329,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/source\/scss\/layout\/_extends.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/docs\/css\/layout\/_extends.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/source\/scss\/layout\/_grid-columns.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/docs\/css\/layout\/_grid-columns.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/source\/scss\/layout\/_grid-container.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/docs\/css\/layout\/_grid-container.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/source\/scss\/layout\/_index.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/docs\/css\/layout\/_index.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/source\/scss\/styles.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -482,7 +430,7 @@
 	"displayValue": "techdegree-project-5",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-grumpy",
-	"lastBuiltDate": 536830335
+	"lastBuiltDate": 536846598
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
