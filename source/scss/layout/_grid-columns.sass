@@ -13,9 +13,14 @@
 [class^="grid__col--"]
   border-radius: $br--rounded
   padding: em(10px)
+  display: flex
+  justify-content: space-between
   @include mq(small)
     margin-top: em(12px)
     margin-bottom: em(12px)
+    justify-content: center
+    flex-direction: column;
+
 
   @include mq(medium)
     @include doubly(percentage($g-gutter-width / $context))
@@ -30,6 +35,8 @@
 .grid__row
   @extend %clearfix
   margin-bottom: em(50px)
+  @include mq(large)
+    display: flex
 
 
 
