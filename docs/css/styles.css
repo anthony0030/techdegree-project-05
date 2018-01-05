@@ -1,7 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 @import url(../bower_components/normalize-css/normalize.css);
 /* line 7, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_helpers.sass */
-.grid:after {
+.grid:after, .grid__row:after {
   content: "";
   display: table;
   clear: both; }
@@ -12,102 +12,292 @@
   margin-left: auto;
   margin-right: auto; }
 
-/* line 5, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/layout/_grid-container.sass */
+/* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_helpers.sass */
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* line 13, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/base/_base.sass */
+* {
+  box-sizing: border-box; }
+
+/* line 16, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/base/_base.sass */
+body {
+  color: #797e83;
+  font-size: 16px;
+  margin: 0;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5; }
+
+/* line 23, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/base/_base.sass */
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+/* line 29, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/base/_base.sass */
+a {
+  color: #51ddfc;
+  text-decoration: none;
+  font-weight: 400;
+  margin: auto; }
+
+/* line 35, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/base/_base.sass */
+.container {
+  width: 80%;
+  padding-top: 2.5em;
+  margin: auto; }
+
+/* line 10, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_images.sass */
+.img, .img--logo, .img--frame, .img--avatar {
+  max-width: 100%;
+  margin: 0 auto;
+  align-self: center; }
+  /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+  .img--logo {
+    align-self: center; }
+  /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+  .img--frame {
+    border: 12px solid white;
+    outline: 1px solid #cdcdcd;
+    padding: 0.3125em solid #797e83; }
+  /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+  .img--avatar {
+    border-radius: 50%; }
+
+/* line 10, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_typography.sass */
+.blockquote {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  border-left: 9px solid #58e1c1;
+  border-radius: 4px;
+  font-size: 24px;
+  padding-left: 2.0833333333em; }
+
+/* line 18, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_typography.sass */
+.headline--primary {
+  color: #58e1c1; }
+
+/* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_typography.sass */
+.headline--secondary {
+  font-size: 20px;
+  margin-bottom: 1.25em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100; }
+
+/* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_forms.sass */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+/* line 18, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_forms.sass */
+.form__input {
+  margin: 0 auto;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 5px solid #58e1c1;
+  margin-bottom: 20px; }
+  /* line 25, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_forms.sass */
+  .form__input:focus {
+    outline: none; }
+
+/* line 28, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_forms.sass */
+.form__label--hidden {
+  display: none; }
+
+/* line 1, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
+.btn, .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+  width: 100%;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 0.625em;
+  margin: 0.625em 0; }
+  /* line 9, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
+  .btn:focus, .btn--default:focus, .btn--success:focus, .btn--error:focus, .btn--warning:focus, .btn--info:focus {
+    outline: none; }
+  /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+  .btn--default {
+    background-color: #51ddfc; }
+  /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+  .btn--success {
+    background-color: #62cc82; }
+  /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+  .btn--error {
+    background-color: #e4757b; }
+  /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+  .btn--warning {
+    background-color: #ff774e; }
+  /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+  .btn--info {
+    background-color: #9278c3; }
+  @media (min-width: 1100px) {
+    /* line 1, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
+    .btn, .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
+      width: 9.375em; } }
+
+/* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
+form button[type="submit"] {
+  width: 100%; }
+
+/* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_navigation.sass */
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em; }
+
+/* line 17, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_navigation.sass */
+.nav li {
+  padding: 0.75em; }
+
+/* line 20, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_navigation.sass */
+.nav a {
+  display: block;
+  border-radius: 4px;
+  color: #797e83;
+  font-size: 1.125em;
+  font-weight: 300;
+  text-align: center;
+  padding: .4em;
+  text-decoration: none; }
+  /* line 29, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_navigation.sass */
+  .nav a:hover {
+    color: #fff;
+    background-color: #58e1c1; }
+  /* line 32, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_navigation.sass */
+  .nav a:focus {
+    outline-color: transparent; }
+
+@media (min-width: 769px) {
+  /* line 42, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_navigation.sass */
+  .img--logo {
+    width: 140px; }
+  /* line 45, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_navigation.sass */
+  .nav {
+    margin-top: 3em;
+    flex-direction: row;
+    justify-content: space-between; } }
+
+@media (min-width: 1100px) {
+  /* line 53, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_navigation.sass */
+  .img--logo {
+    margin-right: auto; }
+  /* line 56, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_navigation.sass */
+  .nav {
+    margin-top: 0;
+    align-self: center; }
+  /* line 60, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_navigation.sass */
+  .nav li {
+    margin-left: .65em;
+    margin-right: .65em; } }
+
+/* line 20, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_grid.sass */
 .grid {
   width: 90%; }
-  /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/layout/_grid-container.sass */
+  /* line 26, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_grid.sass */
   [class*="grid__col--"] > .grid {
     width: 100%; }
   @media (min-width: 1100px) {
-    /* line 5, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/layout/_grid-container.sass */
+    /* line 20, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_grid.sass */
     .grid {
       max-width: 1050px; } }
 
 @media (min-width: 769px) {
-  /* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+  /* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .grid__col--1 {
-    width: 100%; }
-  /* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+    width: 6.5%; }
+  /* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .grid__col--2 {
-    width: 100%; }
-  /* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+    width: 15%; }
+  /* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .grid__col--3 {
-    width: 100%; }
-  /* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+    width: 23.5%; }
+  /* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .grid__col--4 {
-    width: 100%; }
-  /* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+    width: 32%; }
+  /* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .grid__col--5 {
-    width: 100%; }
-  /* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+    width: 40.5%; }
+  /* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .grid__col--6 {
-    width: 100%; }
-  /* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+    width: 49%; }
+  /* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .grid__col--7 {
-    width: 100%; }
-  /* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+    width: 57.5%; }
+  /* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .grid__col--8 {
-    width: 100%; }
-  /* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+    width: 66%; }
+  /* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .grid__col--9 {
-    width: 100%; }
-  /* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+    width: 74.5%; }
+  /* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .grid__col--10 {
-    width: 100%; }
-  /* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+    width: 83%; }
+  /* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .grid__col--11 {
-    width: 100%; }
-  /* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
+    width: 91.5%; }
+  /* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .grid__col--12 {
     width: 100%; } }
 
-@media (min-width: 1px) and (max-width: 768px) {
-  /* line 13, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/layout/_grid-columns.sass */
-  [class^="grid__col--"] {
-    margin-top: 0.75em;
-    margin-bottom: 0.75em; } }
+/* line 44, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_grid.sass */
+[class^="grid__col--"] {
+  border-radius: 4px;
+  padding: 0.625em;
+  display: flex;
+  justify-content: space-between; }
+  @media (min-width: 1px) and (max-width: 768px) {
+    /* line 44, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_grid.sass */
+    [class^="grid__col--"] {
+      margin-top: 0.75em;
+      margin-bottom: 0.75em;
+      justify-content: center;
+      flex-direction: column; } }
 
-@media (min-width: 769px) {
-  /* line 13, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/layout/_grid-columns.sass */
-  [class^="grid__col--"] {
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px; }
-    /* line 45, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
-    [class^="grid__col--"] + [class^="grid__col--"] {
-      margin-left: 2%; }
-    /* line 24, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/layout/_grid-columns.sass */
-    [class^="grid__col--"]:last-of-type {
-      float: right; } }
+/* line 66, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_grid.sass */
+.grid__row {
+  margin-bottom: 3.125em; }
+  @media (min-width: 1100px) {
+    /* line 66, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_grid.sass */
+    .grid__row {
+      display: flex; } }
 
-/* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
-.btn--default {
-  background-color: #52bab3; }
+/* line 79, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_grid.sass */
+.grid__col--3.theme__colors {
+  background-color: #dfb2ee; }
 
-/* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
-.btn--success {
-  background-color: #5ece7f; }
+/* line 79, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_grid.sass */
+.grid__col--4.theme__colors {
+  background-color: #7ee6fd; }
 
-/* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
-.btn--error {
-  background-color: #e67478; }
+/* line 79, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_grid.sass */
+.grid__col--5.theme__colors {
+  background-color: #88d9a0; }
 
-/* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
-.btn--warning {
-  background-color: #ff784f; }
+/* line 79, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_grid.sass */
+.grid__col--6.theme__colors {
+  background-color: #3fabca; }
 
-/* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
-.btn--info {
-  background-color: #9279c3; }
+/* line 79, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_grid.sass */
+.grid__col--7.theme__colors {
+  background-color: #ec9fa3; }
 
-/* line 5, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_navigation.sass */
-.img--logo {
-  width: 110px; }
+/* line 79, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_grid.sass */
+.grid__col--8.theme__colors {
+  background-color: #fd9e84; }
 
-/* line 8, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_navigation.sass */
-.nav {
-  margin-top: 1.5em; }
-  /* line 10, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_navigation.sass */
-  .nav a {
-    display: block; }
+/* line 79, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_grid.sass */
+.grid__col--12.theme__colors {
+  background-color: #7fe8d2; }
+
+/*# sourceMappingURL=styles.css.map */
