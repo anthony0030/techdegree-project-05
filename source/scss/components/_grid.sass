@@ -45,7 +45,7 @@
   border-radius: $br--rounded
   padding: em(10px)
   display: flex
-  justify-content: space-between
+  justify-content: space-around
   @include mq(small)
     margin-top: em(12px)
     margin-bottom: em(12px)
@@ -64,10 +64,10 @@
 
 // grid row styles
 .grid__row
-  @extend %clearfix
   margin-bottom: em(50px)
   @include mq(large)
     display: flex
+    justify-content: space-between
 
 // =============================================================================
 // Grid Coloring
