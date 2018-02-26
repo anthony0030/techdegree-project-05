@@ -15,7 +15,7 @@
 /* line 19, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_helpers.sass */
 .srt {
   border: 0;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -28,29 +28,18 @@
   box-sizing: border-box; }
 
 /* line 16, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/base/_base.sass */
-body {
-  color: #797e83;
-  font-size: 16px;
-  margin: 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5; }
-
-/* line 23, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/base/_base.sass */
-ul,
-li {
+ul {
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
-/* line 29, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/base/_base.sass */
-a {
-  color: #51ddfc;
-  text-decoration: none;
-  font-weight: 400;
-  margin: auto; }
+/* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/base/_base.sass */
+p {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-/* line 35, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/base/_base.sass */
+/* line 27, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/base/_base.sass */
 .container {
+  margin: 0;
   width: 80%;
   padding-top: 2.5em;
   margin: auto; }
@@ -72,7 +61,21 @@ a {
   .img--avatar {
     border-radius: 50%; }
 
-/* line 10, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_typography.sass */
+/* line 6, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_typography.sass */
+.container {
+  color: #797e83;
+  font-size: 16px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5; }
+
+/* line 13, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_typography.sass */
+.link {
+  color: #51ddfc;
+  text-decoration: none;
+  font-weight: 400;
+  margin: auto; }
+
+/* line 20, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_typography.sass */
 .blockquote {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -81,11 +84,11 @@ a {
   font-size: 24px;
   padding-left: 2.0833333333em; }
 
-/* line 18, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_typography.sass */
+/* line 28, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_typography.sass */
 .headline--primary {
   color: #58e1c1; }
 
-/* line 21, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_typography.sass */
+/* line 31, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_typography.sass */
 .headline--secondary {
   font-size: 20px;
   margin-bottom: 1.25em;
@@ -124,12 +127,15 @@ a {
   padding: 0.625em;
   margin: 0.625em 0; }
   /* line 9, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
+  .btn[type="submit"], [type="submit"].btn--default, [type="submit"].btn--success, [type="submit"].btn--error, [type="submit"].btn--warning, [type="submit"].btn--info {
+    width: 100%; }
+  /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
   .btn:focus, .btn--default:focus, .btn--success:focus, .btn--error:focus, .btn--warning:focus, .btn--info:focus {
     outline: none; }
   /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .btn--default {
     background-color: #51ddfc; }
-    /* line 15, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
+    /* line 17, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
     .btn--default:active {
       -moz-box-shadow: inset 0 0 10px #04bbe3;
       -webkit-box-shadow: inset 0 0 10px #04bbe3;
@@ -137,7 +143,7 @@ a {
   /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .btn--success {
     background-color: #62cc82; }
-    /* line 15, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
+    /* line 17, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
     .btn--success:active {
       -moz-box-shadow: inset 0 0 10px #319750;
       -webkit-box-shadow: inset 0 0 10px #319750;
@@ -145,7 +151,7 @@ a {
   /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .btn--error {
     background-color: #e4757b; }
-    /* line 15, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
+    /* line 17, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
     .btn--error:active {
       -moz-box-shadow: inset 0 0 10px #cb2831;
       -webkit-box-shadow: inset 0 0 10px #cb2831;
@@ -153,7 +159,7 @@ a {
   /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .btn--warning {
     background-color: #ff774e; }
-    /* line 15, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
+    /* line 17, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
     .btn--warning:active {
       -moz-box-shadow: inset 0 0 10px #e73600;
       -webkit-box-shadow: inset 0 0 10px #e73600;
@@ -161,7 +167,7 @@ a {
   /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/utilities/_mixins.sass */
   .btn--info {
     background-color: #9278c3; }
-    /* line 15, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
+    /* line 17, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
     .btn--info:active {
       -moz-box-shadow: inset 0 0 10px #5e4293;
       -webkit-box-shadow: inset 0 0 10px #5e4293;
@@ -170,10 +176,6 @@ a {
     /* line 1, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
     .btn, .btn--default, .btn--success, .btn--error, .btn--warning, .btn--info {
       width: 9.375em; } }
-
-/* line 23, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_buttons.sass */
-form button[type="submit"] {
-  width: 100%; }
 
 /* line 11, Users/anthonyveaudry/Sites/techdegree-project-5/source/scss/components/_navigation.sass */
 .nav {
