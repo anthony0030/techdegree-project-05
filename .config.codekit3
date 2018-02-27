@@ -16,86 +16,6 @@
 		"oAP": "\/docs\/.gitignore",
 		"oF": 1
 		},
-	"\/bower.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/docs\/bower-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/bower_components\/normalize-css\/.bower.json": {
-		"ft": 524288,
-		"oA": 2,
-		"oAP": "\/docs\/bower_components\/normalize-css\/.bower.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/bower_components\/normalize-css\/.editorconfig": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/docs\/bower_components\/normalize-css\/.editorconfig",
-		"oF": 0
-		},
-	"\/bower_components\/normalize-css\/.gitattributes": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/docs\/bower_components\/normalize-css\/.gitattributes",
-		"oF": 0
-		},
-	"\/bower_components\/normalize-css\/.gitignore": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/docs\/bower_components\/normalize-css\/.gitignore",
-		"oF": 0
-		},
-	"\/bower_components\/normalize-css\/.travis.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/docs\/bower_components\/normalize-css\/.travis.yml",
-		"oF": 0
-		},
-	"\/bower_components\/normalize-css\/bower.json": {
-		"ft": 524288,
-		"oA": 2,
-		"oAP": "\/docs\/bower_components\/normalize-css\/bower.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/bower_components\/normalize-css\/LICENSE.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 2,
-		"oAP": "\/docs\/bower_components\/normalize-css\/LICENSE.md",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/bower_components\/normalize-css\/normalize.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/docs\/bower_components\/normalize-css\/normalize.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/docs": {
 		"ft": 65536,
 		"oA": 1,
@@ -120,21 +40,101 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/source\/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/docs\/bower-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/source\/bower_components\/normalize-css\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/docs\/bower_components\/normalize-css\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/source\/bower_components\/normalize-css\/.editorconfig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/docs\/bower_components\/normalize-css\/.editorconfig",
+		"oF": 0
+		},
+	"\/source\/bower_components\/normalize-css\/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/docs\/bower_components\/normalize-css\/.gitattributes",
+		"oF": 0
+		},
+	"\/source\/bower_components\/normalize-css\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/docs\/bower_components\/normalize-css\/.gitignore",
+		"oF": 0
+		},
+	"\/source\/bower_components\/normalize-css\/.travis.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/docs\/bower_components\/normalize-css\/.travis.yml",
+		"oF": 0
+		},
+	"\/source\/bower_components\/normalize-css\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/docs\/bower_components\/normalize-css\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/source\/bower_components\/normalize-css\/LICENSE.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/docs\/bower_components\/normalize-css\/LICENSE.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/source\/bower_components\/normalize-css\/normalize.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/docs\/bower_components\/normalize-css\/normalize.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/source\/images\/avatar.png": {
 		"ft": 32768,
 		"iS": 65584,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/docs\/images\/avatar.png",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"\/source\/images\/image.png": {
 		"ft": 32768,
 		"iS": 153024,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/docs\/images\/image.png",
 		"oF": 0,
 		"oIPL": 0,
@@ -145,7 +145,7 @@
 	"\/source\/images\/logo.png": {
 		"ft": 32768,
 		"iS": 7015,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/docs\/images\/logo.png",
 		"oF": 0,
 		"oIPL": 0,
@@ -430,7 +430,7 @@
 	"displayValue": "techdegree-project-5",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-grumpy",
-	"lastBuiltDate": 541413883
+	"lastBuiltDate": 541416320
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -679,7 +679,7 @@
 		},
 	"babelPresetType": 193,
 	"babelRetainLines": 0,
-	"bowerAbbreviatedPath": "bower_components",
+	"bowerAbbreviatedPath": "source\/bower_components",
 	"bowerAutoCreateInfoFile": 1,
 	"bowerInstallDevDependencies": 0,
 	"bowerSaveDependencies": 1,
@@ -2227,7 +2227,7 @@
 		"useUnixNewlines": 0
 		},
 	"languageDefaultsJPG": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 2,
 		"autoOutputPathFilenamePattern": "*.jpg",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
@@ -2315,7 +2315,7 @@
 		"shouldRunCacheBuster": 0
 		},
 	"languageDefaultsPNG": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 2,
 		"autoOutputPathFilenamePattern": "*.png",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
