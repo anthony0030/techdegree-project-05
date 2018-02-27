@@ -9,10 +9,8 @@
 
 
 .nav
-  display: flex
-  flex-direction: column
+  @include flex(flex,column)
   margin-top: 1.5em
-
 
 .nav li
   padding: em(12px)
@@ -32,7 +30,6 @@
   &:focus
     outline-color: transparent
 
-
 // --------------------------
 //  Media Queries
 //---------------------------
@@ -43,9 +40,8 @@
     width: 140px
 
   .nav
+    @include flex($direction:row, $just:space-between)
     margin-top: 3em
-    flex-direction: row
-    justify-content: space-between
 
 
 @include mq(large)

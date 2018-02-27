@@ -44,13 +44,11 @@
 [class^="grid__col--"]
   border-radius: $br--rounded
   padding: em(10px)
-  display: flex
-  justify-content: space-around
+  @include flex(flex, $just:space-around)
   @include mq(small)
     margin-top: em(12px)
     margin-bottom: em(12px)
-    justify-content: center
-    flex-direction: column
+    @include flex($direction:column, $just:center)
 
 // Column media queries
   @include mq(medium)
@@ -66,8 +64,7 @@
 .grid__row
   margin-bottom: em(50px)
   @include mq(large)
-    display: flex
-    justify-content: space-between
+    @include flex(flex, $just:space-between)
 
 // =============================================================================
 // Grid Coloring
