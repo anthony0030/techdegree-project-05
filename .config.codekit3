@@ -7,7 +7,7 @@
 		"uuidString": "9A13AC89-A095-490D-A799-72F858D9CC5C"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -15,12 +15,6 @@
 		"oA": 1,
 		"oAP": "\/docs\/.gitignore",
 		"oF": 1
-		},
-	"\/docs": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/docs\/docs",
-		"oF": 0
 		},
 	"\/README.md": {
 		"cB": 0,
@@ -427,10 +421,11 @@
 	},
 "projectAttributes": {
 	"creationDate": 529505745,
-	"displayValue": "techdegree-project-5",
+	"displayValue": "techdegree-project-05",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-grumpy",
-	"lastBuiltDate": 542708862
+	"iconImageWasSetByUser": 0,
+	"lastBuiltDate": 553605674
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2233,6 +2228,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
