@@ -17,10 +17,24 @@
 		"oAP": "/docs/.gitignore",
 		"oF": 1
 		},
+	"/.vscode/settings.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/docs/.vscode/settings-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/docs": {
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "/docs/docs",
+		"oF": 0
+		},
+	"/mockups": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/docs/mockups",
 		"oF": 0
 		},
 	"/node_modules": {
@@ -404,12 +418,6 @@
 		"oAP": "/docs/index.html",
 		"oF": 0
 		},
-	"/source/mockups": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/docs/mockups",
-		"oF": 0
-		},
 	"/source/no_classes.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -676,7 +684,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-grumpy",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 602172011.17056406
+	"lastBuiltDate": 602670446.34132004
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
