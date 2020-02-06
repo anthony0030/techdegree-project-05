@@ -10,6 +10,6 @@
 ### Mobile
 ![Mobile Mockup](mockups/mobile480px_mockup.png)
 ### Desktop
-![Lightbox Mockup](mockups/desktop1400px_mockup.png)
+![Desktop Mockup](mockups/desktop1400px_mockup.png)
 ### No Classes
-![Lightbox Mockup](mockups/no_classes_mockup.png)
+![No Classes Mockup](mockups/no_classes_mockup.png)
