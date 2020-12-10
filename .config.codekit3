@@ -373,8 +373,8 @@
 	"/source/favicon/manifest.json": {
 		"ft": 524288,
 		"oA": 2,
-		"oAP": "/docs/favicon/manifest-min.json",
-		"oF": 1,
+		"oAP": "/docs/favicon/manifest.json",
+		"oF": 3,
 		"oO": 0,
 		"oS": 1
 		},
@@ -756,7 +756,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-grumpy",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 629289022.15282595
+	"lastBuiltDate": 629290317.15314102
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
