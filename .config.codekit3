@@ -86,6 +86,14 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/source/.nojekyll": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/docs/.nojekyll",
+		"oF": 0
+		},
 	"/source/favicon/android-icon-144x144.png": {
 		"ft": 32768,
 		"iS": 16095,
@@ -748,7 +756,7 @@
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-grumpy",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 626084164.25347102
+	"lastBuiltDate": 629289022.15282595
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
