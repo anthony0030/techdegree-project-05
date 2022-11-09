@@ -102,10 +102,10 @@ p {
   text-transform: uppercase;
   border: none;
   border-radius: 4px;
-  color: #fff;
+  color: #ffffff;
   padding: 0.625em;
   margin: 0.625em 0; }
-  .btn[type="submit"], .btn--info[type="submit"], .btn--warning[type="submit"], .btn--error[type="submit"], .btn--success[type="submit"], .btn--default[type="submit"] {
+  .btn [type="submit"], .btn--info [type="submit"], .btn--warning [type="submit"], .btn--error [type="submit"], .btn--success [type="submit"], .btn--default [type="submit"] {
     width: 100%; }
   .btn:focus, .btn--info:focus, .btn--warning:focus, .btn--error:focus, .btn--success:focus, .btn--default:focus {
     outline: none; }
@@ -157,10 +157,10 @@ p {
   font-size: 1.125em;
   font-weight: 300;
   text-align: center;
-  padding: .4em;
+  padding: 0.4em;
   text-decoration: none; }
   .nav a:hover {
-    color: #fff;
+    color: #ffffff;
     background-color: #58e1c1; }
   .nav a:focus {
     outline-color: transparent; }
@@ -180,8 +180,8 @@ p {
     margin-top: 0;
     align-self: center; }
   .nav li {
-    margin-left: .65em;
-    margin-right: .65em; } }
+    margin-left: 0.65em;
+    margin-right: 0.65em; } }
 
 .grid {
   width: 90%; }
@@ -227,6 +227,16 @@ p {
       margin-bottom: 0.75em;
       flex-direction: column;
       justify-content: center; } }
+  @media (min-width: 769px) {
+    [class^="grid__col--"] {
+      float: left;
+      min-height: 1px;
+      padding-left: 10px;
+      padding-right: 10px; }
+      [class^="grid__col--"] + [class^="grid__col--"] {
+        margin-left: 2%; }
+      [class^="grid__col--"]:last-of-type {
+        float: right; } }
 .grid__row {
   margin-bottom: 3.125em; }
   @media (min-width: 1100px) {
